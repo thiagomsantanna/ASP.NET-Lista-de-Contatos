@@ -1,11 +1,16 @@
 USE [PhoneBook]
 GO
 
-
 INSERT INTO Clientes (ClienteId, Nome, Cpf, Email,TelefoneCelular,TelefoneComercial, Endereco) VALUES 
-(7,'Juliano','999.999.999-99','juliano1@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
-(8,'Juliano2','999.999.999-99','juliano2@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
-(9,'Juliano3','999.999.999-99','juliano3@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
+(1,'Juliano','999.999.999-99','juliano1@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
+(2,'Juliano2','999.999.999-99','juliano2@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
+(3,'Juliano3','999.999.999-99','juliano3@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
+(4,'Juliano4','999.999.999-99','juliano4@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
+(5,'Juliano5','999.999.999-99','juliano5@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
+(6,'Juliano6','999.999.999-99','juliano6@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
+(7,'Juliano7','999.999.999-99','juliano7@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
+(8,'Juliano8','999.999.999-99','juliano8@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
+(9,'Juliano9','999.999.999-99','juliano9@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
 (10,'Juliano10','999.999.999-99','juliano10@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
 (11,'Juliano11','999.999.999-99','juliano11@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
 (12,'Juliano12','999.999.999-99','juliano12@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
@@ -97,12 +102,8 @@ INSERT INTO Clientes (ClienteId, Nome, Cpf, Email,TelefoneCelular,TelefoneComerc
 (97,'Juliano97','999.999.999-99','juliano20@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
 (98,'Juliano98','999.999.999-99','juliano20@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
 (99,'Juliano99','999.999.999-99','juliano20@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
-(100,'Juliano100','999.999.999-99','juliano20@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
-(101,'Juliano101','999.999.999-99','juliano20@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
-(102,'Juliano102','999.999.999-99','juliano20@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
-(103,'Juliano103','999.999.999-99','juliano20@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
-(104,'Juliano104','999.999.999-99','juliano20@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123'),
-(105,'Juliano105','999.999.999-99','juliano20@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123');
+(100,'Juliano100','999.999.999-99','juliano20@gmail.com','(17) 99999-9999','(17) 3333-3333','R. Vc Sabe Onde, 123');
+
 
 SELECT * FROM Clientes
 
