@@ -1,67 +1,90 @@
 ﻿@model PhoneBook_DrinkCompany.Models.Clientes
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Dados - Cliente";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
+
 
 <div>
-    <h4>Clientes</h4>
+
+    <h4>Cliente: &nbsp; @Html.DisplayFor(model => model.Nome)</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
+        <dt class="col-sm-2">
+            Nome
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Nome)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cpf)
+        <dt class="col-sm-2">
+            CPF
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Cpf)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cpnj)
+        <dt class="col-sm-2">
+            CNPJ
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cpnj)
+        <dd class="col-sm-10">
+            @if (Model.Cpnj == null)
+            {
+                @Html.Raw("Cliente não jurídico.");
+            }
+            else
+            {
+                @Html.DisplayFor(model => model.Cpnj)
+            }
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
+        <dt class="col-sm-2">
+            e-Mail
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Email)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TelefoneCelular)
+        <dt class="col-sm-2">
+            Celular
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.TelefoneCelular)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TelefoneResidencial)
+        <dt class="col-sm-2">
+            Telefone Residencial
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TelefoneResidencial)
+        <dd class="col-sm-10">
+            @if (Model.TelefoneResidencial == null)
+            {
+                @Html.Raw("Nenhum telefone Residencial cadastrado.");
+            }
+            else
+            {
+                @Html.DisplayFor(model => model.TelefoneResidencial)
+            }
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TelefoneComercial)
+        <dt class="col-sm-2">
+            Telefone Comercial
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TelefoneComercial)
+        <dd class="col-sm-10">
+            @if (Model.TelefoneComercial == null)
+            {
+                @Html.Raw("Nenhum telefone Comercial cadastrado.");
+            }
+            else
+            {
+                @Html.DisplayFor(model => model.TelefoneComercial)
+            }
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Endereco)
+        <dt class="col-sm-2">
+            Endereço
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Endereco)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.ClienteId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    
+    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.ClienteId">Edit</a> |
+    <a asp-action="Index">Voltar à lista</a>
 </div>

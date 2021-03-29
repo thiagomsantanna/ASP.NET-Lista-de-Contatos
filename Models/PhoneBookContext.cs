@@ -45,6 +45,8 @@ namespace PhoneBook_DrinkCompany.Models
                     .HasMaxLength(300)
                     .IsUnicode(false);
 
+
+
                 entity.Property(e => e.Nome)
                     .IsRequired()
                     .HasMaxLength(100)

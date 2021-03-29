@@ -1,2 +1,8 @@
 ﻿<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/lib/jquery-mask-plugin/src/jquery.mask.js" type="text/javascript" asp-append-version="true"></script>
+<script>$('#Cpf').mask('000.000.000-00', { placeholder: "___.___.___-__" });</script>
+<script>$('#Cpnj').mask('00.000.000/0000-00', { placeholder: "__.___.___/____-__" });</script>
+<script>$('#TelefoneCelular').mask('(00) 00000-0000');</script>
+<script>$('#TelefoneResidencial').mask('(00) 0000-0000');</script>
+<script>$('#TelefoneComercial').mask('(00) 00000-0000');</script>
